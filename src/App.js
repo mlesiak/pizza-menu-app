@@ -1,9 +1,13 @@
 import { Navigation } from './navigation'
+import { Content} from './content'
 
 
 function App() {
   return (
-    <Navigation />
+    <>
+    <Navigation /> 
+    <Content />
+    </>
   );
 }
 

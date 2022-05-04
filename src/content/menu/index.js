@@ -10,6 +10,14 @@ import Paper from '@mui/material/Paper';
 
 export const Menu = () => {
 
+  useEffect(()=> {
+    fetch('http://localhost:3000/menu')
+    .then(r => r.json())
+    .then((data => {
+      console.log(data)
+    }))
+  })
+
     return (
         <PageWrapper title='Pizza Menu'>
              <TableContainer component={Paper}>
